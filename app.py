@@ -1,5 +1,5 @@
 import traceback
-from  datetime import datetime
+from datetime import datetime
 from models import Employee, Recruiter, Programmer, Candidate, Vacancy
 
 
@@ -10,9 +10,9 @@ def main():
                        tech_stack={'have a car ', 'Python', 'JS', 'Git', 'HTML'})
         p2 = Programmer(name="Kostya", zp_day=200, days=24, email='kos@com',
                         tech_stack={'know of English ', 'Python', 'Django', 'flaks', 'react'})
-        c = Candidate("Petya","pet@com", "Razrabotka", "JS",  "trenie")
-        c2 = Candidate("Katya","KET@com", "Recruter", "English",  "С1")
-        c3 = Candidate("Kiril", "Kir@com", "Razrabotkbotka", "Python",  "junior")
+        c = Candidate("Petya", "pet@com", "Razrabotka", "JS", "trenie")
+        c2 = Candidate("Katya", "KET@com", "Recruter", "English", "С1")
+        c3 = Candidate("Kiril", "Kir@com", "Razrabotkbotka", "Python", "junior")
         v = Vacancy("Programmer", "Python,JS,HTML", "junior")
         v2 = Vacancy("Recruiter", "комуникабельность , знание английского языка", "стаж 1год")
 
@@ -65,9 +65,9 @@ def main():
     except Exception as e:
 
         with open('logs.txt', 'a+') as log:
-            mytime=(datetime.now().ctime())
-            log.write(mytime + '\n'  )
-            log.write(traceback.format_exc() + '------------------' + '\n' )
+            mytime = (datetime.now().ctime())
+            log.write(mytime + '\n')
+            log.write(traceback.format_exc() + '------------------' + '\n')
 
 
 if __name__ == '__main__':

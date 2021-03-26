@@ -122,7 +122,7 @@ class Programmer(Employee):
 
 
 class Candidate:
-    def __init__(self, full_name,email, technologies, main_skill, main_skill_grade):
+    def __init__(self, full_name, email, technologies, main_skill, main_skill_grade):
         self.full_name = full_name
         self.email = email
         self.technologies = technologies
