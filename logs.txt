@@ -1,0 +1,8 @@
+Fri Mar 26 19:18:49 2021
+Traceback (most recent call last):
+  File "C:\alevel2\oop\app.py", line 61, in main
+    print(p.full_info)
+  File "C:\alevel2\oop\models.py", line 46, in full_info
+    return f"Class name: {self.__class__.__name__}, Name: {self.name}, Number of days worked: {self.working_days()} "
+TypeError: working_days() missing 1 required positional argument: 'zp_day'
+------------------
